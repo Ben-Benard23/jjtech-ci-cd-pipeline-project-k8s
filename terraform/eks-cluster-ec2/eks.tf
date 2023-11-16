@@ -78,7 +78,7 @@ resource "aws_eks_cluster" "cluster" {
       aws_subnet.private-ca-central-1a.id,
       aws_subnet.private-ca-central-1b.id,
       aws_subnet.public-ca-central-1a.id,
-      aws_subnet.public-ca-cental-1b.id
+      aws_subnet.public-ca-central-1b.id
     ]
   }
 
