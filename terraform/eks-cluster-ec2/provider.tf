@@ -3,12 +3,12 @@
 terraform {
   backend "s3" {
     # Replace this with your bucket name!
-    bucket         = "k8s-project-bucket-2023"
+    bucket         = "my-k8s-project-bucket"
     key            = "jjtech/terraform.tfstate"
-    region         = "us-east-1"
+    region         = "ca-central-1"
 
     # Replace this with your DynamoDB table name!
-    dynamodb_table = "jjtech-dynamodb"
+    dynamodb_table = "my-k8s-project-table"
   }
   
   required_providers {
