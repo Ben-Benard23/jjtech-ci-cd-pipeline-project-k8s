@@ -114,7 +114,7 @@ pipeline {
     stage('Build and Push Docker Image') {
       environment {
         awsAccountId = '598719645295'
-        region = 'ca-cental-1'
+        region = 'ca-central-1'
         repositoryName = 'jjtech-demo'
         dockerImageTag = "${BUILD_NUMBER}"
         ecrRegistry = "${awsAccountId}.dkr.ecr.${region}.amazonaws.com"
